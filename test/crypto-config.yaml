@@ -1,0 +1,19 @@
+OrdererOrgs:
+  - Name: Orderer
+    Domain: mobileid.com
+    Specs:
+      - Hostname: orderer
+
+PeerOrgs:
+  - Name: verifier
+    Domain: verifier.mobileid.com
+    Template:
+      Count: 2
+    Users:
+      Count: 1
+  - Name: host
+    Domain: host.mobileid.com
+    Template:
+      Count: 2
+    Users:
+      Count: 1
